@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TableView">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/exportar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        android:layout_gravity="end"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@color/white"
+        android:layout_margin="16dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/excel" />
+    </androidx.cardview.widget.CardView>
+
+    <TableLayout
+        android:layout_marginTop="90dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Encabezado de la tabla -->
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vuelo"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:background="#012267"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nMaletas"
+                android:gravity="center"
+                android:background="#012267"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:gravity="center"
+                android:background="#012267"
+                android:textColor="#FFFFFF"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <!-- Fila 1 -->
+        <TableRow
+            android:background="@drawable/border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AA123"
+                android:gravity="center" /> <!-- Centrar el texto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:gravity="center" /> <!-- Centrar el texto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023-11-01"
+                android:gravity="center" /> <!-- Centrar el texto -->
+        </TableRow>
+
+        <!-- Fila 2 -->
+        <TableRow  android:background="@drawable/border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BA456"
+                android:gravity="center" /> <!-- Centrar el texto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:gravity="center" /> <!-- Centrar el texto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023-11-02"
+                android:gravity="center" /> <!-- Centrar el texto -->
+        </TableRow>
+
+        <!-- Agrega más filas aquí, hasta un total de 10 filas -->
+
+    </TableLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

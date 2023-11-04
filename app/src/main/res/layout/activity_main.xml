@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/botonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/menu_24"
+        app:backgroundTint="@color/white"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_talma" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_gravity="top"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="30dp"
+        android:elevation="30dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Contador"
+                android:textColor="#98A5AA"
+                android:textSize="35dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_azul_redondo"
+                android:drawablePadding="16dp"
+                android:hint="Numero de vuelo"
+                android:padding="3dp"
+                android:text="9774"
+                android:textColor="#98A5AA"
+                android:textColorHint="#98A5AA"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad de maletas"
+                android:layout_gravity="center"
+                android:textColor="#98A5AA"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/contador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="#4CAF50"
+                android:textSize="55dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/menos"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:text="-1"
+                    android:background="@drawable/boton_cuadrado"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:layout_marginEnd="15dp"
+                    android:elevation="4dp"
+                    app:backgroundTint="#012267" />
+
+                <Button
+                    android:id="@+id/mas"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:text="+1"
+                    android:background="@drawable/boton_cuadrado"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:elevation="4dp"
+                    app:backgroundTint="#305BB3" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
